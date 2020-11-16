@@ -1,0 +1,181 @@
+
+.c-container{
+    margin: 0px auto;
+    padding: 0;
+}
+.container{
+    margin:0 10%;
+}
+
+.content{
+    margin:50px 10%;
+}
+.content-header{
+    padding: 10px 10px;
+    min-height: 100px;
+    /* background-color:blue */
+}
+.content-body{
+    padding: 10px 10px;
+    min-height: 600px;
+    /* background-color:yellow; */
+}
+.content-footer{
+    padding: 10px 10px;
+    min-height: 100px;
+    /* background-color:green; */
+}
+
+.container-table-2{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-gap: 50px;
+}
+
+.container-table-4{
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+}
+
+.box{
+    margin: 0 auto;
+}
+
+.box-m{
+    width:550px;
+    /* min-height:400px; */
+    margin: 0 auto;
+}
+
+.box-header{
+    padding: 1px;
+    height: 40px;
+    background-color: #bbbbbb;
+}
+.box-header *:not(h3){
+    padding:0 5px;
+}
+.box-header h3{
+    text-align: center;
+    height: 20px;
+}
+.box-body{
+    padding: 1px;
+    min-height: 200px;
+    background-color: #cccccc;
+}
+.box-footer{
+    padding: 1px;
+    min-height: 0px;
+}
+
+.box-list td,
+.box-list th{
+    margin: 0px auto;
+    padding: 0;
+}
+
+.box-list .row{
+    border-color: #bbbbbb;
+    border-bottom-style:solid;
+    border-width:0.5px;
+    text-decoration: none;
+    height: 25px;
+    padding: 10px 25px;
+    display: block;
+}
+.box-list .row:hover{
+    position: relative;
+    box-shadow: 0px 5px 16px 0px rgba(0,0,0,0.2);
+    background-color: #dddddd;
+}
+
+.box-msg{
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    padding: 0 15px;
+}
+
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 150px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+
+    animation-name: fadeIn;
+    animation-duration: 0.5s
+}
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+
+
+
+@media screen and (max-width: 1460px) {
+    .container{
+        margin:0 7%;
+    }
+    .content{
+        margin:50px 7%;
+    }
+}
+@media screen and (max-width: 1337px) {
+    .container{
+        margin:0 5%;
+    }
+    .content{
+        margin:50px 5%;
+    }
+}
+@media screen and (max-width: 1280px) {
+    .container{
+        margin:0 3%;
+    }
+    .content{
+        margin:50px 3%;
+    }
+}
+
+@media screen and (max-width: 1200px) {
+    .container{
+        margin:0 15px;
+    }
+    .content{
+        margin:25px 15px;
+    }
+    .container-table-2{
+        margin: 10px 5px;
+        grid-template-columns: auto;
+    }
+    .box-m{
+        min-width:300px;
+        /* min-height:400px; */
+    }
+}
+@media screen and (max-width: 996px) {
+    .modal{
+        padding-top: 50px;
+    }
+    .container{
+        margin:0 2px;
+    }
+    .content{
+        margin:5px 2px;
+    }
+    .container-table-2{
+        margin: 5px 2px;
+        /* grid-template-columns: auto; */
+    }
+}

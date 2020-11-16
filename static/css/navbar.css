@@ -1,0 +1,80 @@
+
+
+/*nav底框*/
+nav.navb{
+    font-size: 16px;
+    width: 100%;
+    background-color: #bbbbbb;
+    min-height: 51px;
+    /* overflow: hidden; */
+    /* box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2); */
+}
+nav.navb *{
+    color: #333333;
+}
+nav.navb a{
+    text-decoration: none;
+}
+
+/*nav主框*/
+nav.navb div.main{
+    height: 100%;
+}
+
+/*nav主框內的div.btn*/
+nav.navb div.main div.btn{
+    float: left;
+}
+nav.navb div.main div.btn.right{
+    float: right;
+}
+
+
+/*div.btn內的a*/
+nav.navb a{
+    display: block;
+    padding: 16px 20px;
+}
+
+/*Logo的字較大*/
+nav.navb div.main div.btn.home a{
+    font-size: 20px;
+    padding: 14px 20px;
+}
+
+/*手機型下拉按鈕*/
+nav.navb div.main div.menu-trig{
+    display: none;
+}
+
+
+/*滑上時觸發*/
+nav.navb div.main div.btn:not(.home):not(.menu-trig):hover{
+    background-color: #cccccc;
+}
+
+
+
+@media screen and (max-width: 745px) {
+    nav.navb div.main div.menu-trig{
+        position:absolute;
+        top:0;
+        right:5px;
+        display: block;
+    }
+    nav.navb div.main div.btn .dropdown-menu a{
+        text-align: center;
+    }
+    nav.navb div.main div.btn .dropdown-menu{
+        position: relative;
+    }
+    nav.navb div.main div.btn:not(.home):not(.menu-trig){
+        float: none;
+        display:none;
+        text-align: center;
+    }
+    nav.navb div.main.trig div.btn:not(.menu-trig){
+        float: none;
+        display: block;
+    }
+}
